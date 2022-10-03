@@ -1,0 +1,62 @@
+<html>
+<head><title>REGISTRATION FORM</title></head>
+    <style type="text/css">
+        
+        body{
+            height: 100vh;
+            background-image: url(21.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+<body>
+    <form action="register.php" method="POST">
+        <fieldset>
+            <legend>REGISTRATION FORM</legend>
+            <p>
+                <label for="name">Name:</label> <input id="idname" type="text" name="name" placeholder="your name" />
+            </p>
+            <p>
+                <label>Gander:</label>
+                <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Man</label>
+                <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Woman</label>
+            </p>
+            <p>
+                <label for="idalamat">Address:</label> <input id="idalamat" type="text" name="alamat" />
+            </p>
+            <p>
+                <label for="country">Country:</label>
+                <select class="option" name="Country">
+                <option disabled="disabled" selected="selected">-Choose Option-</option>
+                <option>Indonesia</option>
+            </select>
+            </p>
+            <p>
+                <label for="idemail">Email:</label> <input id="idemail" type="email" name="email"/>
+            </p>
+            <p>
+                <label class="Phone-number">Phone Number</label>
+                <input class="number" type="text" name="Phone">
+            </p>
+            <p>
+                <label for="idtanggallahir">Tanggal lahir:</label> <input id="idtanggallahir" type="date" name="tanggallahir" />
+            </p>
+            <p>
+                <label for="idusia">Age:</label> <input id="idusia" type="number" name="age"  />
+            </p> 
+            <p>
+                <label for="berkas" style="margin-right: 34px">Photo</label>
+                <input id="berkas" name="berkas" type="file"/>
+            </p>
+            <p>
+                <label>Comment:</label>
+                <textarea style="width: 250; height: 100;"></textarea>
+            </p>
+        </fieldset>   
+            <p><input type="reset" value="Reset"> <input type="button" name="submit" value="submit" /></p>
+        
+    </form>
+</body>
+ 
+</html>
